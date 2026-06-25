@@ -40,5 +40,8 @@ jobs:
       - name: Install dependencies
         run: npm ci
 
-      - name: Format Code
+      - name: Check code format
         run: npm run format:check
+
+      - name: Check code linting
+        run: npm run lint
