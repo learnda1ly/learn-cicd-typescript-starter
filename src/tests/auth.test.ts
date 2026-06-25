@@ -10,7 +10,6 @@ describe("authentication", () => {
     const header = {
       authentication: "apikey 1234"
     }
-    //expect(getAPIKey(header)).toBeNull();
-    expect(getAPIKey(header)).toBe("1234");
+    expect(getAPIKey(header)).toBeNull();
   });
 });
